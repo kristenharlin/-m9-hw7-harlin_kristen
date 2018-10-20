@@ -170,6 +170,13 @@ p {
 #desktop-menu {
 	display: none;
 }
+.grayout{
+  background-color: #626262;
+  color: #ffffff;
+  transition: background ease-in-out .5s;
+  -webkit-transition: background ease-in-out .5s;
+  -moz-transition: background ease-in-out .5s;
+}
 strong {
 	font-weight: 700;
 }
