@@ -1,0 +1,322 @@
+@import url('https://fonts.googleapis.com/css?family=PT+Sans');
+* {
+	font-family: 'PT Sans', sans-serif;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	box-sizing: border-box;
+}
+nav {
+	padding: 15px;
+}
+nav ul li {
+	display: inline-block;
+	text-transform: uppercase;
+}
+nav ul li a {
+	text-decoration: none;
+	padding: 15px;
+	border-radius: 8px;
+	font-size: .8rem;
+	color: #fc713a;
+}
+#nav-container {
+	margin: auto;
+	max-width: 1000px;
+	display: flex;
+	justify-content: flex-end;
+}
+.green-nav {
+	background-color: #c1e40e;
+	padding: 25px 20px 20px 20px;
+	color: #000000;
+}
+.orange-nav {
+	background-color: #fc713a;
+	padding: 25px 20px 20px 20px;
+	color: #ffffff;
+}
+/* mobile navigation styles here */
+
+/* hamburger menu styling */
+
+.hamburger {
+	background: none;
+	position: absolute;
+	top: 0;
+	right: 0;
+	line-height: 45px;
+	padding: 15px;
+	color: #fc713a;
+	border: 0;
+	font-size: 1.4em;
+	font-weight: bold;
+	cursor: pointer;
+	outline: none;
+	z-index: 10000000000000;
+}
+.cross {
+	background: none;
+	position: absolute;
+	top: 0px;
+	right: 0;
+	padding: 15px;
+	color: #fc713a;
+	border: 0;
+	font-size: 3em;
+	line-height: 65px;
+	font-weight: bold;
+	cursor: pointer;
+	outline: none;
+	z-index: 10000000000000;
+}
+.menu {
+	z-index: 1000000;
+	font-weight: bold;
+	font-size: 0.8em;
+	width: 100%;
+	background: #f1f1f1;
+	position: absolute;
+	text-align: center;
+	font-size: .8em;
+	letter-spacing: .05em;
+}
+.menu ul {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	list-style-image: none;
+}
+.menu li {
+	font-family: 'Montserrat', sans-serif;
+	display: block;
+	padding: 15px 0 15px 0;
+	border-bottom: #dddddd 1px solid;
+}
+.menu li:hover {
+	display: block;
+	background: #ffffff;
+	padding: 15px 0 15px 0;
+	border-bottom: #dddddd 1px solid;
+}
+.menu ul li a {
+	text-decoration: none;
+	margin: 0px;
+	color: #000000;
+}
+.menu ul li a:hover {
+	color: #fc713a;
+	text-decoration: none;
+}
+.menu a {
+	text-decoration: none;
+	color: #000000;
+}
+.menu a:hover {
+	text-decoration: none;
+	color: #fc713a;
+}
+/* end mobile nav styles */
+
+#banner {
+	background-image: url("../img/banner-bg-mobile.png");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-color: #000000;
+	min-height: 500px;
+}
+#home-headline {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	width: 600px;
+}
+#home-headline-container {
+	padding-top: 150px;
+	display: flex;
+	max-width: 1000px;
+	margin: auto;
+	justify-content: flex-end;
+}
+h1 {
+	color: #ffffff;
+	font-weight: 100;
+}
+h2 {
+	font-size: 1.7rem;
+	margin-bottom: 5px;
+	font-weight: 200;
+}
+h3 {
+	color: #fc713a;
+	margin-bottom: 10px;
+}
+a {
+	text-decoration: none;
+	color: #ffffff;
+	text-transform: uppercase;
+}
+p {
+	color: #d5c8b5;
+	margin-bottom: 5px;
+	font-size: 1.05rem;
+}
+#banner p {
+	text-shadow: 1px 1px 20px #000000;
+	color: #ffffff;
+}
+#desktop-menu {
+	display: none;
+}
+strong {
+	font-weight: 700;
+}
+.green {
+	color: #c1e40e;
+}
+.buttons {
+	margin-top: 35px;
+}
+.round-button-orange, .round-button-green {
+	border-radius: 25px;
+	padding: 10px;
+	color: #ffffff;
+	text-decoration: none;
+	text-transform: uppercase;
+	letter-spacing: .05rem;
+}
+.round-button-orange {
+	border: 2px solid #fc713a;
+	background-color: #fc713a;
+}
+.round-button-green {
+	border: 2px solid #c1e40e;
+	background-color: #c1e40e;
+}
+/* image grid here */
+
+.image-grid {
+	text-align: center;
+	padding: 45px 15px 45px 15px;
+}
+.image-grid h2 {
+	color: #000000;
+	text-shadow: none;
+}
+#flex-gallery {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	max-width: 1100px;
+	margin: 25px auto;
+}
+#flex-gallery h2 {
+	color: #ffffff;
+}
+#sammys-story, #sammich-menu, #order-online, #auburn, #tuscaloosa, #gainesville {
+	background-size: contain;
+	background-repeat: no-repeat;
+	width: 325px;
+	height: 265px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin: 3px;
+}
+#sammys-story {
+	background-image: url('../img/story-bg.png');
+}
+#sammich-menu {
+	background-image: url('../img/menu-bg.png');
+}
+#order-online {
+	background-image: url('../img/order-bg.png');
+}
+#auburn {
+	background-image: url('../img/auburn-bg.png');
+}
+#tuscaloosa {
+	background-image: url('../img/alabama-bg.png');
+}
+#gainesville {
+	background-image: url('../img/florida-bg.png');
+}
+/* footer styles here */
+
+footer {
+	background-image: linear-gradient(#3a3937, #7e7e7e);
+	padding: 5%
+}
+#footer-container {
+	max-width: 1000px;
+	margin: auto;
+	display: flex;
+	flex-direction: column;
+}
+footer p a {
+	color: #ffffff;
+}
+.footer-links {
+	max-width: 500px;
+}
+.footer-nav {
+	margin-bottom: 10px;
+}
+.footer-nav p {
+	display: flex;
+	max-width: 160px;
+	flex-wrap: wrap;
+}
+.social img {
+	width: 10%;
+	max-width: 50px;
+	margin-right: 20px;
+}
+/* media queries start here */
+
+@media (min-width: 500px) {
+	#footer-container {
+		flex-direction: row;
+		justify-content: space-between;
+	}
+}
+@media (min-width: 575px) {
+	#desktop-menu {
+		display: block;
+	}
+	.hamburger, .cross, .menu {
+		display: none;
+	}
+	#home-headline-container {
+		padding-top: 90px;
+	}
+}
+@media (min-width: 750px) {
+	#banner {
+		background-image: url(../img/banner-bg.png);
+	}
+	#banner p {
+		color: #d5c8b5;
+	}
+	.image-grid {
+		padding: 50px;
+	}
+	#footercol1, #footercol2, #footercol3 {
+		float: left;
+		padding-right: 90px;
+	}
+}
+@media (min-width: 800px) {
+	.round-button-orange {
+		background-color: transparent;
+		color: #fc713a;
+	}
+	.round-button-green {
+		background-color: transparent;
+		color: #c1e40e;
+	}
+}
