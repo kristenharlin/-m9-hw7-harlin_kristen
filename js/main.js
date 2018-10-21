@@ -21,3 +21,5 @@ var showLocations = function (){
   locationList.classList.toggle('hidediv');
 
 };
+
+navButton.onclick = showLocations;
