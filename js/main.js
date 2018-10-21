@@ -26,11 +26,11 @@ navButton.onclick = showLocations;
 
 // part iii decrease opacity of images on hovernav
 
-var gridGallery = document.getElementById('flex-gallery');
-var gridImage = gridGallery.children;
+var gridGallery = document.querySelectorAll('gallery-img');
+//var gridImage = gridGallery.children;
 
 var hoverLight = function (){
   this.classList.toggle('lighten');
 };
 
-gridImage.onmouseenter = hoverLight;
+gridGallery.onmouseenter = hoverLight;

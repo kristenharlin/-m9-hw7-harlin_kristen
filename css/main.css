@@ -259,7 +259,7 @@ strong {
 #flex-gallery h2 {
 	color: #ffffff;
 }
-#sammys-story, #sammich-menu, #order-online, #auburn, #tuscaloosa, #gainesville {
+.sammys-story, .sammich-menu, .order-online, .auburn, .tuscaloosa, .gainesville {
 	background-size: contain;
 	background-repeat: no-repeat;
 	width: 325px;
@@ -269,23 +269,24 @@ strong {
 	justify-content: center;
 	align-items: center;
 	margin: 3px;
+  opacity: 1;
 }
-#sammys-story {
+.sammys-story {
 	background-image: url('../img/story-bg.png');
 }
-#sammich-menu {
+.sammich-menu {
 	background-image: url('../img/menu-bg.png');
 }
-#order-online {
+.order-online {
 	background-image: url('../img/order-bg.png');
 }
-#auburn {
+.auburn {
 	background-image: url('../img/auburn-bg.png');
 }
-#tuscaloosa {
+.tuscaloosa {
 	background-image: url('../img/alabama-bg.png');
 }
-#gainesville {
+.gainesville {
 	background-image: url('../img/florida-bg.png');
 }
 
