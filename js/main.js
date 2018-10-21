@@ -28,3 +28,9 @@ navButton.onclick = showLocations;
 
 var gridGallery = document.getElementById('flex-gallery');
 var gridImage = gridGallery.children;
+
+var hoverLight = function (){
+  this.classList.toggle('lighten');
+};
+
+gridImage.onmouseenter = hoverLight;
