@@ -26,28 +26,14 @@ navButton.onclick = showLocations;
 
 // part iii decrease opacity of images on hovernav
 
-var gridGallery = document.getElementById('sammys-story');
-var gridGallery2 = document.getElementById('sammich-menu');
-var gridGallery3 = document.getElementById('order-online');
-var gridGallery4 = document.getElementById('auburn');
-var gridGallery5 = document.getElementById('tuscaloosa');
-var gridGallery6 = document.getElementById('gainesville');
-
-//var gridImage = gridGallery.children;
+var gridGallery = document.getElementsByClassName('gallery-img');
 
 var hoverLight = function (){
   this.classList.toggle('lighten');
 };
 
-gridGallery.onmouseenter = hoverLight;
-gridGallery2.onmouseenter = hoverLight;
-gridGallery3.onmouseenter = hoverLight;
-gridGallery4.onmouseenter = hoverLight;
-gridGallery5.onmouseenter = hoverLight;
-gridGallery6.onmouseenter = hoverLight;
-gridGallery.onmouseleave = hoverLight;
-gridGallery2.onmouseleave = hoverLight;
-gridGallery3.onmouseleave = hoverLight;
-gridGallery4.onmouseleave = hoverLight;
-gridGallery5.onmouseleave = hoverLight;
-gridGallery6.onmouseleave = hoverLight;
+for (i=0; i < gridGallery.length; i++) {
+  // add event listener for each div
+  gridGallery[i].addEventListener('mouseenter', hoverLight);
+  gridGallery[i].addEventListener('mouseleave', hoverLight);
+};
