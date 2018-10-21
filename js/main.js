@@ -23,3 +23,8 @@ var showLocations = function (){
 };
 
 navButton.onclick = showLocations;
+
+// part iii decrease opacity of images on hovernav
+
+var gridGallery = document.getElementById('flex-gallery');
+var gridImage = gridGallery.children;
