@@ -16,3 +16,8 @@ navButton2.onmouseleave = hoverNav;
 
 // part ii - showing the locations on click
 var locationList = document.getElementById('locations');
+
+var showLocations = function (){
+  locationList.classList.toggle('hidediv');
+
+};
