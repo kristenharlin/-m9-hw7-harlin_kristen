@@ -288,6 +288,13 @@ strong {
 #gainesville {
 	background-image: url('../img/florida-bg.png');
 }
+
+.lighten {
+  opacity: .7;
+  transition: opacity 3s;
+  -webkit-transition: opacity 3s;
+  -moz-transition: opacity 3s;
+}
 /* footer styles here */
 
 footer {
